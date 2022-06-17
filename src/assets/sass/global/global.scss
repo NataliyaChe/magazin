@@ -1,6 +1,22 @@
 .container {
     max-width: 1140px;
     margin: 0 auto;
+
+    @media (max-width: $netbook) {
+        max-width: 960px;
+    }
+
+    @media (max-width: $tablet) {
+        max-width: 720px;
+    }
+
+    @media (max-width: $small) {
+        padding: $container-size;
+    }
+
+    @media (max-width: $x-small) {
+        min-width: 320px;
+    }
 }
 
 .h1 {
