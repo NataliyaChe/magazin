@@ -23,7 +23,7 @@ const localServer = {
   src: 'src/',
   assets: './src/assets/',
   out: './dist/',
-  port: 9093,
+  port: 9091,
   url: 'http://localhost:',
 }
 
