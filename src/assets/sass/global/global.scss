@@ -1,37 +1,69 @@
 .container {
-    max-width: 1366px;
+    max-width: 1140px;
     margin: 0 auto;
-    padding: $container-size;
 }
 
 .h1 {
-
+    font-family: $title-font;
+    font-size: 55px;
+    line-height: 70px;
 }
 
 .h2 {
-
+    font-family: $title-font;
+    font-size: 40px;
+    line-height: 50px;
 }
 
 .h3 {
-
+    font-family: $title-font;
+    font-size: 25px;
+    line-height: 30px;
 }
 
 .h4 {
-
+    font-family: $title-font;
+    font-size: 20px;
+    line-height: 25px;
 }
 
 .h5 {
+    font-family: $title-font;
+    font-size: 16px;
+    line-height: 25px;
+}
 
+.h6 {
+    font-family: $text-font;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .medium-text {
-
+    font-family: $text-font;
+    font-size: 18px;
+    line-height: 30px;
+    color: $color-grey-85;
 }
 
 .small-text {
+    font-family: $text-font;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-grey-85;
 
+    &--bold {
+        color: $color-grey-100;
+        font-weight: 700;
+    }
 }
 
 .tiny-text {
-
+    font-family: $text-font;
+    font-size: 12px;
+    line-height: 15px;
+    color: $color-grey-50;
 }
