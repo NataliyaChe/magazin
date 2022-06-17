@@ -22,10 +22,18 @@
 
         &:nth-child(1) {
             padding-right: 25px;
+
+            @media (max-width: $x-small) {
+                padding-right: 0;
+            }
         }
 
         &:nth-child(2) {
             padding-left: 25px;
+
+            @media (max-width: $x-small) {
+                padding-left: 0;
+            }
         }
     }
     
@@ -33,6 +41,14 @@
         gap: 15px;
         border-right: 1px solid $color-grey-15;
         padding: 15px 0;
+
+        @media (max-width: $tablet) {
+            border-right: none;
+        }
+
+        @media (max-width: $x-small) {
+            margin-right: 25px;
+        }
     }
 
     &__search {
@@ -50,11 +66,26 @@
   
     &__search-input {
         width: 100%;  
+
+        @media (max-width: $x-small) {
+            display: none;
+        }
+    }
+
+    &__subsc-container {
+
+        @media (max-width: $x-small) {
+            order: 2;
+        }
     }
   
     &__subsc-img {
         width: 66px;
         margin-top: 7px;
+
+        @media (max-width: $tablet) {
+            display: none;
+        }
     }    
 
     &__subsc-link {
@@ -72,26 +103,90 @@
         border: none;
         outline: none;
         background: transparent;
+
+        @media (max-width: $x-small) {
+            padding-right: 25px;
+        }
+    }
+
+    &__sign-text {
+
+        @media (max-width: $x-small) {
+            display: none;
+        }
+    }
+    
+    &__desc-container {
+
+        @media (max-width: $tablet) {
+            display: none;
+        }
     }
 
     &__desc-img {
         max-width: 100px;
         margin: 0 15px 0 20px;
+
+        @media (max-width: $tablet) {
+            margin: 0 25px 0 50px;
+        }
+
+        @media (max-width: $x-small) {
+            display: none;
+        }
+    }
+    
+    &__logo {
+
+        @media (max-width: $x-small) {
+            margin: 15px auto;
+        }
     }
 
-    &__logo {
-        
+    &__date {
+
+        @media (max-width: $x-small) {
+            display: none;
+        }
+    }
+
+    &__weather-container {
+
+        @media (max-width: $tablet) {
+            display: none;
+        }
     }
 
     &__nav {
         background-color: $color-grey-100;
         padding: 17px 0 18px;
+
+        @media (max-width: $tablet) {
+            padding: 8px 0;
+        }
+
+        @media (max-width: $small) {
+            padding: 6px 0;
+        }
+
+        @media (max-width: $x-small) {
+            display: none;
+        }
     }
 
     &__nav-menu {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: $tablet) {
+            flex-wrap: wrap;
+            gap: 8px 80px;
+        }
+ 
+        @media (max-width: $small){
+            gap: 4px 60px;
+        }
     }
 
     &__nav-link {
