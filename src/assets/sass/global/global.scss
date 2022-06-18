@@ -36,6 +36,11 @@
     font-size: 40px;
     line-height: 50px;
     color: $color-grey-100;
+
+    @media (max-width: $x-small) {
+        font-size: 25px;
+        line-height: 30px;
+    }
 }
 
 .h3 {
