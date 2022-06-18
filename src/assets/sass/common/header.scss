@@ -16,7 +16,7 @@
         align-items: center;
     }
 
-    &__thumb {
+    &__flex-wrapper {
         display: flex;
         gap: 10px;
 
@@ -58,7 +58,7 @@
         margin: 0 auto;       
     }
   
-    &__search-input, &__search-btn {
+    &__search-input {
         border: none;
         outline: none;
         background: transparent;
@@ -100,9 +100,6 @@
     }
 
     &__sign-btn {
-        border: none;
-        outline: none;
-        background: transparent;
 
         @media (max-width: $x-small) {
             padding-right: 25px;
@@ -168,10 +165,6 @@
         @media (max-width: $small) {
             padding: 6px 0;
         }
-
-        @media (max-width: $x-small) {
-            display: none;
-        }
     }
 
     &__nav-menu {
@@ -184,9 +177,15 @@
             gap: 8px 80px;
         }
  
-        @media (max-width: $small){
+        @media (max-width: $small) {
             gap: 4px 60px;
         }
+
+        @media (max-width: $x-small) {
+            justify-content: center;
+            gap: 2px 20px;
+        }
+
     }
 
     &__nav-link {

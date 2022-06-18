@@ -13,10 +13,6 @@
     @media (max-width: $small) {
         padding: $container-size;
     }
-
-    @media (max-width: $x-small) {
-        min-width: 320px;
-    }
 }
 
 .h1 {
@@ -56,6 +52,11 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
     font-weight: 700;
+
+    @media (max-width: $x-small) {
+        font-size: 12px;
+        line-height: 15px;
+    }
 }
 
 .medium-text {
