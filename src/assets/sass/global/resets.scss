@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-img {
-    display: block;   
-}
-
 ul {
     li {
         list-style: none;
@@ -19,5 +15,8 @@ a {
 }
 
 button {
+    border: none;
+    outline: none;
+    background: transparent;
     cursor: pointer;
 }
