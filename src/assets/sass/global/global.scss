@@ -16,6 +16,9 @@
 }
 
 .btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     font-family: $text-font;
     font-size: 14px;
     line-height: 20px;
@@ -23,6 +26,15 @@
     background-color: $color-blue-75;
     border-radius: 20px;
     padding: 10px 29px;
+}
+
+.preview {
+    background: $color-white;
+    border-radius: 10px;
+}
+
+.avatar {
+    width: 45px;
 }
 
 .h1 {
@@ -45,8 +57,10 @@
 
 .h3 {
     font-family: $title-font;
+    font-weight: 700;
     font-size: 25px;
     line-height: 30px;
+    color: $color-grey-100;
 }
 
 .h4 {
@@ -57,8 +71,10 @@
 
 .h5 {
     font-family: $title-font;
+    font-weight: 700;
     font-size: 16px;
     line-height: 25px;
+    color: $color-grey-100;
 }
 
 .h6 {
@@ -92,6 +108,10 @@
         color: $color-grey-100;
         font-weight: 700;
     }
+
+    &--white {
+        color: $color-white;
+    }
 }
 
 .tiny-text {
@@ -99,4 +119,41 @@
     font-size: 12px;
     line-height: 15px;
     color: $color-grey-50;
+
+    &--white {
+        color: $color-white;
+    }
+
+    &--upper {
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+}
+
+.food, .health {
+    color: $color-bluegreen-75;
+}
+
+.cars {
+    color: $color-greyblue-75;
+}
+
+.movies, .art {
+    color: $color-purple-75;
+}
+
+.nfl {
+    color: $color-orange-75;
+}
+
+.tech {
+    color: $color-green-75;
+}
+
+.flights {
+    color: $color-blue-75;
+}
+
+.science {
+    color: $color-red-75;
 }
