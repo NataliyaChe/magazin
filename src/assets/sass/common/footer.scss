@@ -13,7 +13,7 @@
 
         @media (max-width: $x-small) {
             gap: 15px;
-            padding: 15px 0 25px;
+            padding: 15px 0 5px;
         }
     }
 
@@ -21,7 +21,7 @@
 
         @media (max-width: $x-small) {
             max-width: 250px;
-            text-align: center;
+            text-align: center ;
         }
     }
 
@@ -49,12 +49,9 @@
 
         @media (max-width: $tablet) {
             justify-content: center;
-            padding-bottom: 30px;
+            padding-bottom: 0;
+            border-bottom: none;
         } 
-
-        @media (max-width: $x-small) {
-            padding-bottom: 25px;
-        }
     }
 
     &__menu-tab {
@@ -62,7 +59,6 @@
 
         @media (max-width: $tablet) {
             display: flex;
-            gap: 30px;
         }
 
         @media (max-width: $x-small) {
@@ -70,15 +66,71 @@
             flex-wrap: wrap;
         }
     }
+    &__menu-item {
+        padding: 0 15px 20px;
 
+        &:nth-child(1) {
+            border-bottom: 5px solid $color-red-75;
+        }
+
+        &:nth-child(2) {
+            border-bottom: 5px solid $color-purple-75;
+        }
+
+        &:nth-child(3) {
+            border-bottom: 5px solid $color-blue-75;
+        }
+
+        &:nth-child(4) {
+            border-bottom: 5px solid $color-orange-75;
+        }
+
+        &:nth-child(5) {
+            border-bottom: 5px solid $color-green-75;
+        }
+
+        &:nth-child(6) {
+            border-bottom: 5px solid $color-greyblue-75;
+        }
+
+        @media (max-width: $x-small) {
+            margin-top: 20px;
+        }
+
+    }
     &__menu-link {
-        color: $color-grey-100;
+        color: $color-grey-100;    
     }
 
     &__menu {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 0;
+        width: 100%;
+
+        &:nth-child(2) {
+            border-top: 5px solid $color-red-75;
+        }
+
+        &:nth-child(3) {
+            border-top: 5px solid $color-purple-75;
+        }
+
+        &:nth-child(4) {
+            border-top: 5px solid $color-blue-75;
+        }
+
+        &:nth-child(5) {
+            border-top: 5px solid $color-orange-75;
+        }
+
+        &:nth-child(6) {
+            border-top: 5px solid $color-green-75;
+        }
+
+        &:nth-child(7) {
+            border-top: 5px solid $color-greyblue-75;
+        }
 
         @media (max-width: $tablet) {
             display: none;
@@ -86,7 +138,7 @@
     }
 
     &__menu-title {
-        margin: 30px 0 25px;
+        padding-top: 30px;    
     }
 
     &__contacts {
