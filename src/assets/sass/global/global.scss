@@ -53,6 +53,7 @@ main {
     align-items: center;
     gap: 10px;
 }
+
 .h1 {
     font-family: $title-font;
     font-weight: 700;
@@ -86,6 +87,7 @@ main {
     font-weight: 700;
     font-size: 20px;
     line-height: 25px;
+    $color-grey-100;
 }
 
 .h5 {
@@ -193,7 +195,7 @@ main {
 }
 
 .tiny-post {
-    padding: 25px 25px 30px;
+    padding: 25px;
 }
 
 .tiny-post-text {
