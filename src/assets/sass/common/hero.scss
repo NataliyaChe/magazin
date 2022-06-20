@@ -1,6 +1,6 @@
 .hero {
-    background: $color-grey-10;
     padding-top: 30px;
+    margin-bottom: 60px;
 
     &__bar {
         display: flex;
@@ -193,5 +193,4 @@
     &__cat-title {
         padding: 0 25px 30px;
     }
-
 }     
