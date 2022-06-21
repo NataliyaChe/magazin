@@ -232,21 +232,47 @@ main {
     }
 
     .topics {
+        &__container {
+            padding-bottom: 60px;
+        }
 
         &__list {
             max-width: 848px;
-            padding: 25px;
         }
 
         &__item {
             display: flex;
             gap: 25px;
-            padding-bottom: 25px;
+            padding: 25px 0;
+            margin: 0 25px;
             border-bottom: 1px solid $color-grey-15;
+
+            &:last-child {
+                border-bottom: none;
+            }
         }
 
         &__img {
             max-width: 336px;
+        }
+
+        &__tag-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .mark:active {
+            color: $color-red;
+        }
+        
+        &__item-title {
+            margin-bottom: 10px;
+        }
+
+        &__item-text {
+            margin-bottom: 20px;
         }
     }
 
