@@ -26,6 +26,7 @@
     }
 
     &__subsc-form {
+        display: flex;
 
         @media (max-width: $x-small) {
             display: flex;
