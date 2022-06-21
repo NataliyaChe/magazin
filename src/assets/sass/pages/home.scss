@@ -37,7 +37,7 @@ main {
     
         &__dest {
             grid-column: span 3;
-            background: url('../img/hero/rectangle.png'); 
+            background: url('../../img/hero/rectangle.png'); 
             background-size: cover;
             padding: 55px 55px 0;
         }
@@ -101,7 +101,7 @@ main {
         }
     
         &__cars-content {
-            background-image: url('../img/hero/car.png'); 
+            background-image: url('../../img/hero/car.png'); 
             background-repeat: no-repeat;
             background-position: right;
             background-size: contain;
@@ -138,7 +138,7 @@ main {
             display: flex;
             flex-direction: column;
             grid-area: span 2/span 1;
-            background: url('../img/hero/tattoo.jpg'); 
+            background: url('../../img/hero/tattoo.jpg'); 
             background-size: cover;
             padding: 18px 18px 25px;
         }
@@ -209,7 +209,7 @@ main {
     }     
 
     .banner {
-        background: url('../img/banner.jpg');
+        background: url('../../img/banner.jpg');
         background-size: cover;
         margin-bottom: 60px;
     
@@ -256,6 +256,12 @@ main {
             max-width: 336px;
         }
 
+        &__item-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
         &__tag-wrap {
             display: flex;
             justify-content: space-between;
@@ -263,10 +269,6 @@ main {
             margin-bottom: 15px;
         }
 
-        .mark:active {
-            color: $color-red;
-        }
-        
         &__item-title {
             margin-bottom: 10px;
         }
@@ -290,7 +292,7 @@ main {
         &__careers {
             grid-area: span 2/span 2; 
             background-color: $color-greyblue-50;  
-            background-image: url('../img/hot/girl.png'); 
+            background-image: url('../../img/hot/girl.png'); 
             background-repeat: no-repeat;
             background-position: right;
             background-size: contain; 
