@@ -276,6 +276,14 @@ main {
         &__item-text {
             margin-bottom: 20px;
         }
+
+        &__rec-list {
+            margin: 0 25px;
+        }
+
+        &__rec-item {
+            display: flex;
+        }
     }
 
     .hot {

@@ -54,6 +54,21 @@ main {
     gap: 10px;
 }
 
+.tiny-wrap {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: $color-grey-50;
+}
+
+.tiny-post {
+    padding: 25px;
+}
+
+.tiny-post-text {
+    margin: 5px 0 10px;
+}
+
 .h1 {
     font-family: $title-font;
     font-weight: 700;
@@ -186,19 +201,3 @@ main {
 .science {
     color: $color-red-75;
 }
-
-.tiny-wrap {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    color: $color-grey-50;
-}
-
-.tiny-post {
-    padding: 25px;
-}
-
-.tiny-post-text {
-    margin: 5px 0 10px;
-}
-
