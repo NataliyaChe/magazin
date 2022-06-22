@@ -20,7 +20,7 @@ main {
             border-right: 1px solid $color-grey-85;
         }
     
-        &__bar-link {
+        &__bar-title {
             color: $color-white;
         }
     
@@ -35,16 +35,11 @@ main {
             margin-bottom: 30px;
         }
     
-        &__dest {
+        &__destination {
             grid-column: span 3;
             background: url('../../img/hero/rectangle.png'); 
             background-size: cover;
-            padding: 55px 55px 0;
-        }
-    
-        &__flex-wrap {
-            display: flex;
-            flex-direction: column;
+            padding: 55px 55px;
         }
     
         &__dest-tag {
@@ -60,8 +55,7 @@ main {
         &__more {
             display: flex;
             align-items: center;
-            gap: 30px;
-            padding-bottom: 100px;
+            gap: 30px;   
         }
     
         &__play {
@@ -70,24 +64,30 @@ main {
             gap: 10px;
         }
     
-        &__rec {
-            display: grid;
-            grid-template-rows: 60px repeat(5, 1fr);
+        &__recommended {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     
         &__rec-title {
-            padding: 20px 25px;
+            margin: 20px auto;
         }
     
         &__rec-item {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            grid-row: span 1;
-            padding: 17px 25px 20px;
+            padding: 17px 25px 19px;
             border-top: 1px solid $color-grey-15;
         }
-    
+
+        &__rec-item > .tiny-text {
+            margin-bottom: 8px;
+        }
+        
+        &__play-btn {
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+
         &__grid-wrap {
             display: grid;
             gap: 30px;
@@ -105,7 +105,7 @@ main {
             background-repeat: no-repeat;
             background-position: right;
             background-size: contain;
-            padding: 35px 35px 0; 
+            padding: 35px 35px 49px; 
             border-bottom: 1px solid $color-grey-15;
         }
         
@@ -119,19 +119,18 @@ main {
         }
     
         &__cars-text {
-            max-width: 228px;
-            padding-bottom: 49px;
+            max-width: 228px;  
         }
     
         &__cars-author {
             display: flex;
+            align-items: center;
             gap: 15px;
             padding: 13px 35px;
         }
     
         &__author-ava {
             width: 30px;
-            padding-left: -5px;
         }
     
         &__art {
@@ -145,6 +144,7 @@ main {
     
         &__popular-tag {
             width: 66px;
+            font-weight: 700;
             background: $color-green-75;
             border-radius: 3px;
             padding: 5px 12px;
@@ -154,43 +154,56 @@ main {
         &__art-tag {
             margin-bottom: 10px;
         }
-    
-        &__art-title {
-            margin-bottom: 15px;
-        }
 
-        &__art-link {
+        &__art-title {
+            max-width: 203px;
             letter-spacing: 0.5px;
             text-transform: uppercase;
             color: $color-white;
+            margin-bottom: 15px;
         }
     
         &__columns {
             grid-area: span 4/span 1;
-            background-color: $color-greyblue-75;
-            padding: 20px 25px 0 35px;    
+            background-color: $color-greyblue-75;   
         }
     
         &__columns-title {
             color: $color-white;
-            text-align: center;
-            padding-bottom: 19px; 
+            margin: 20px;
         }
     
+        &__columns-list {
+            display: flex;
+            flex-direction: column;
+            padding: 0 24px;
+            border-top: 1px solid $color-greyblue-50;
+            border-bottom: 1px solid $color-greyblue-50;
+        }
+
         &__columns-item {
             position: relative;
-            max-width: 203px;
-            padding: 39px 0 45px;   
+            padding: 45px 0 40px 10px;   
+            border-bottom: 1px solid $color-greyblue-50;
+
+            &:last-child {
+                border-bottom: none;
+            }
         }
     
+        &__quote-img {
+            position: absolute;
+            left: 0;
+            top: 35px;
+        }
+
         &__columns-quotes {
             color: $color-white;
             margin-bottom: 15px;
         }
-    
+
         &__columns-more {
-            text-align: center;
-            margin: 11px auto 14px;
+            margin: 25px;
         }
     
         &__cats {
@@ -234,6 +247,9 @@ main {
     .topics {
         &__container {
             padding-bottom: 60px;
+            display: flex;
+            justify-content: flex-start;
+            gap: 30px;
         }
 
         &__list {
@@ -256,7 +272,7 @@ main {
             max-width: 336px;
         }
 
-        &__item-content {
+        &__flex-wrap {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -277,33 +293,78 @@ main {
             margin-bottom: 20px;
         }
 
+        &__recommended {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: fit-content;
+        }
+
+        &__rec-title {
+            margin: 20px auto;
+        }
+
         &__rec-list {
-            margin: 0 25px;
+            padding: 0 25px;
+            border-top: 1px solid $color-grey-15;
+            border-bottom: 1px solid $color-grey-15;
         }
 
         &__rec-item {
             display: flex;
+            gap: 10px;
+            padding: 17px 0;
+            border-bottom: 1px solid $color-grey-15;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+        &__rec-img {
+            width: 60px;
+        }
+
+        &__rec-more {
+            margin: 11px auto 14px;
         }
     }
 
-    .hot {
+    .proposed {
         background: $color-grey-100;
+        padding: 60px 0;
     
         &__container {
             display: grid;
             gap: 30px;
             grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(3, 1fr); 
-            padding: 60px auto;
+            grid-template-rows: repeat(3, 1fr);   
         }
     
+        &__hot {
+            grid-area: span 3/span 2;
+            background-image: url('../../img/proposed/boat.jpg');
+            background-size: cover; 
+            overflow: hidden;
+            padding: 18px;
+        }
+
+        &__hot-tag {
+            font-weight: 700;
+            background: $color-orange-75;
+            border-radius: 3px;
+            padding: 5px 12px;
+            margin-bottom: 117px;
+        }
+
         &__careers {
+            position: relative;
             grid-area: span 2/span 2; 
             background-color: $color-greyblue-50;  
-            background-image: url('../../img/hot/girl.png'); 
+            background-image: url('../../img/proposed/girl.png'); 
             background-repeat: no-repeat;
-            background-position: right;
-            background-size: contain; 
+            background-size: contain;
+             
             overflow: hidden; 
     
         }

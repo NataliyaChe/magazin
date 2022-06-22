@@ -47,14 +47,18 @@ main {
     width: 45px;
 }
 
+.flex-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
 .stat-wrap {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     gap: 10px;
 }
 
-.tiny-wrap {
+.counter-wrap {
     display: flex;
     align-items: center;
     gap: 5px;
