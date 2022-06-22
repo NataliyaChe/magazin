@@ -357,16 +357,40 @@ main {
             margin-bottom: 117px;
         }
 
+        &__hot-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__hot-title {
+            max-width: 455px;
+            color: $color-white;
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
         &__careers {
-            position: relative;
             grid-area: span 2/span 2; 
             background-color: $color-greyblue-50;  
             background-image: url('../../img/proposed/girl.png'); 
             background-repeat: no-repeat;
-            background-size: contain;
-             
-            overflow: hidden; 
-    
+            background-size: contain; 
+            overflow: hidden;
+            padding: 35px 35px;
+        }
+
+        &__tag {
+            margin-bottom: 20px;
+        }
+        
+        &__careers-title {
+            max-width: 243px;
+            margin-bottom: 15px;
+        }
+
+        &__careers-text {
+            max-width: 213px;
+            margin-bottom: 25px;
         }
     }
 }
