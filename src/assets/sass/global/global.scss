@@ -47,11 +47,30 @@ main {
     width: 45px;
 }
 
+.flex-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
 .stat-wrap {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     gap: 10px;
+}
+
+.counter-wrap {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: $color-grey-50;
+}
+
+.tiny-post {
+    padding: 25px;
+}
+
+.tiny-post-text {
+    margin: 5px 0 10px;
 }
 
 .h1 {
@@ -186,19 +205,3 @@ main {
 .science {
     color: $color-red-75;
 }
-
-.tiny-wrap {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    color: $color-grey-50;
-}
-
-.tiny-post {
-    padding: 25px;
-}
-
-.tiny-post-text {
-    margin: 5px 0 10px;
-}
-
