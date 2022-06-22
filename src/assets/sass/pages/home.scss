@@ -36,7 +36,6 @@ main {
     //Hero section
     .hero {
         margin-bottom: 60px;
-        background-color: $color-grey-100;
         
         &__container { 
             display: grid;
@@ -89,6 +88,10 @@ main {
         &__rec-item {
             padding: 17px 25px 19px;
             border-top: 1px solid $color-grey-15;
+
+            &:hover {
+                background-color: $color-grey-05;
+            }
         }
 
         &__rec-item > .tiny-text {
@@ -240,6 +243,7 @@ main {
         }
     }     
 
+    //Banner section
     .banner {
         background: url('../../img/banner.jpg');
         background-size: cover;
@@ -263,6 +267,7 @@ main {
         }
     }
 
+    //Topics section
     .topics {
         &__container {
             padding-bottom: 60px;
@@ -349,6 +354,7 @@ main {
         }
     }
 
+    //Proposed section
     .proposed {
         background: $color-grey-100;
         padding: 60px 0;
